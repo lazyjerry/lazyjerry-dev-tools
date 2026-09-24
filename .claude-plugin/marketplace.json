@@ -1,0 +1,14 @@
+{
+  "name": "lazyjerry-dev-tools",
+  "description": "LazyJerry 的 Claude Code plugin 集合，plugin 放在 plugins/ 目錄。",
+  "owner": {
+    "name": "LazyJerry"
+  },
+  "plugins": [
+    {
+      "name": "plan-bash-guard",
+      "source": "./plugins/plan-bash-guard",
+      "description": "Plan Mode 下拒絕會觸發權限提示的 Bash 寫法（變數賦值、$ 展開、迴圈、; 與 && 串接），要求改用原生唯讀工具或單一指令。"
+    }
+  ]
+}

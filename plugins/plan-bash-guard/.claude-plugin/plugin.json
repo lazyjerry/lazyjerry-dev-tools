@@ -1,0 +1,8 @@
+{
+  "name": "plan-bash-guard",
+  "version": "1.0.0",
+  "description": "Plan Mode 下拒絕會觸發權限提示的 Bash 寫法（變數賦值、$ 展開、迴圈、; 與 && 串接），要求改用原生唯讀工具或單一指令。",
+  "author": {
+    "name": "LazyJerry"
+  }
+}

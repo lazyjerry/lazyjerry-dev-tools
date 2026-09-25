@@ -59,7 +59,7 @@ claude plugin uninstall plan-bash-guard@lazyjerry-dev-tools   # 移除
 
 - 一個 plugin 一個目錄：`plugins/<名稱>/`，目錄名與 `.claude-plugin/plugin.json` 的 `name` 一致，用 kebab-case。
 - Hook 設定放 `hooks/hooks.json`，腳本放 `scripts/`。hook 指令用 `${CLAUDE_PLUGIN_ROOT}` 指向腳本，不寫死絕對路徑。
-- 腳本只用 Bash 或 Python（標準函式庫），不依賴要另外安裝的套件，其他裝置才裝了就能跑。
+- 腳本只用 Bash 或 Python（標準函式庫），不依賴要另外安裝的套件，其他裝置裝好 plugin 就能直接跑。
 - 新增 plugin 後，在根目錄的 `.claude-plugin/marketplace.json` 的 `plugins` 補一筆，並在上方「Plugin 清單」補一列。
 - 修改 plugin 後，把 `plugin.json` 的 `version` 往上調。各裝置靠版本號判斷有沒有更新，版本沒變就不會更新。
 - 推上去前先跑 `claude plugin validate plugins/<名稱>` 與 `claude plugin validate .`。
